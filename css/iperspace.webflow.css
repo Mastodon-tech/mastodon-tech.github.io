@@ -254,7 +254,7 @@ a {
   transition: text-indent 500ms cubic-bezier(.165, .84, .44, 1);
   font-family: 'Circularpro book', sans-serif;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
@@ -328,7 +328,7 @@ a {
 .text-block {
   font-family: 'Circularpro book', sans-serif;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 60px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -1475,7 +1475,7 @@ html.w-mod-js *[data-ix="modal-interaction"] {
     line-height: 9vmin;
   }
   .h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .text-block {
     margin-right: 0px;
