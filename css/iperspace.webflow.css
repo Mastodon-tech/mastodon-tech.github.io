@@ -53,7 +53,7 @@ a {
   display: block;
   width: 25%;
   height: 100%;
-  background-image: url('../images/decathlon.png');
+  background-image: url('../images/service2.jpg');
   background-position: 0px 50%;
   background-size: cover;
   opacity: 0;
@@ -91,7 +91,7 @@ a {
   display: none;
   width: 20%;
   height: 100%;
-  background-image: url('../images/hdb-header-min.jpg');
+  background-image: url('../images/service2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0;
@@ -107,7 +107,7 @@ a {
   z-index: 0;
   width: 25%;
   height: 100%;
-  background-image: url('../images/annabelle.jpg');
+  background-image: url('../images/service1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0;
@@ -148,7 +148,7 @@ a {
   top: 50%;
   width: 25%;
   height: 100%;
-  background-image: url('../images/eventoxtra-header.jpg');
+  background-image: url('../images/service3.jpg');
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0;
@@ -500,9 +500,9 @@ a {
   bottom: 0px;
   width: 25%;
   height: 100%;
-  background-image: url('../images/flako.jpg');
+  background-image: url('../images/service4.jpg');
   background-position: 50% 50%;
-  background-size: 1466px;
+  background-size: auto;
   opacity: 0;
 }
 
@@ -1710,22 +1710,23 @@ html.w-mod-js *[data-ix="modal-interaction"] {
   }
   .link-case-mobile.one {
     display: block;
-    background-image: url('../images/annabelle.jpg');
+    background-image: url('../images/service1.jpg');
     background-position: 50% 50%;
     background-size: cover;
+    background-image: linear-gradient(rgba);
   }
   .link-case-mobile.two {
-    background-image: url('../images/decathlon.png');
+    background-image: url('../images/service2.jpg');
     background-position: 50% 50%;
     background-size: cover;
   }
   .link-case-mobile.four {
-    background-image: url('../images/eventoxtra-header.jpg');
+    background-image: url('../images/service3.jpg');
     background-position: 50% 50%;
     background-size: cover;
   }
   .link-case-mobile.five {
-    background-image: url('../images/flako.jpg');
+    background-image: url('../images/service4.jpg');
     background-position: 50% 50%;
     background-size: cover;
   }
