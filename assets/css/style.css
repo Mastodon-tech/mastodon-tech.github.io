@@ -67,8 +67,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .item {
   border: none;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 .item .item-wrap {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  padding: 3px;
+  padding: 2px;
 }
 
 .item .item-wrap:after {
