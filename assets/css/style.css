@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  padding: 3px;
+  padding: 5px;
 }
 
 .item .item-wrap:after {
