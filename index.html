@@ -14,7 +14,8 @@
   <link href="./assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="./assets/vendor/font/font.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +40,7 @@
             <ul class="custom-menu">
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Our Journey</a></li>
-              <li class="active"><a href="#">Contact</a></li>
+              <li class="active"><a href="#">Contact Us</a></li>
             </ul>
           </ul>
         </div>
@@ -49,7 +50,8 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Mastodon LTD.</a>
+      
+      <a class="navbar-brand"  href="index.html"> <img id="logo"  src="./assets/img/logo.png" alt="">Mastodon LTD.</a>
 
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
@@ -61,6 +63,9 @@
   <main id="main">
 
     <!-- ======= Works Section ======= -->
+
+    
+    <div class="jumbotron">
     <section class="section site-portfolio">
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
@@ -69,7 +74,7 @@
                 <h3>Mastodon Wash</h3>
                 <span>Ultimate Care</span>
               </div>
-              <img class="img-fluid" src="assets/img/service1.jpg">
+              <img class="img-fluid" src="assets/img/service-bright-1.jpg">
             </a>
           </div>
           <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
@@ -78,7 +83,7 @@
                 <h3>Masta Mart</h3>
                 <span>Place to buy Essentials</span>
               </div>
-              <img class="img-fluid" src="assets/img/service2.jpg">
+              <img class="img-fluid" src="assets/img/service-bright-2.jpg">
             </a>
           </div>
           <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
@@ -87,7 +92,7 @@
                 <h3>M Garage</h3>
                 <span>Car Doctor</span>
               </div>
-              <img class="img-fluid" src="assets/img/service3.jpg">
+              <img class="img-fluid" src="assets/img/service-bright-3.jpg">
             </a>
           </div>
           <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
@@ -96,15 +101,16 @@
                 <h3>Buy & Sell</h3>
                 <span>Buy anywhere anytime</span>
               </div>
-              <img class="img-fluid" src="assets/img/service4.jpg">
+              <img class="img-fluid" src="assets/img/service-bright-4.jpg">
             </a>
           </div>
           
          
         </div>
       </div>
-    </section><!-- End  Works Section -->
 
+    </section><!-- End  Works Section -->
+  </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -123,7 +129,7 @@
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" class="btn btn-sm btn-outline-dark back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
