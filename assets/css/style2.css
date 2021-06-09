@@ -6,7 +6,7 @@ body {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     line-height: 1;
-    overflow-y: hidden;
+    overflow-y: scroll;
     
 }
 
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .jumbotron {
   background-color: transparent;
   width: 100%;
-  padding-top: 1px;
+  padding-top: 10px;
   padding-bottom: 1px;
 }
 
