@@ -1,13 +1,16 @@
 
+
 body {
+  
     font-family: "Noto Sans TC", sans-serif;
     color: #0d1e2d;
     background: linear-gradient(-45deg, #c1e6b8, #2b593e, #6cc2d1, #0b093f);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     line-height: 1;
+    margin:0px auto;
+    padding:0px;
     overflow-y: hidden;
-    
 }
 
 @keyframes gradient {
@@ -20,6 +23,9 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+#footerrow {
+  padding-top: 1px;
 }
 
 .loader {
@@ -158,8 +164,8 @@ a:hover {
   color: #000;
 }
 
-h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: "Noto Sans TC", sans-serif;
+h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
+  font-family: "Raleway", sans-serif;
 }
 
 .section {
@@ -232,9 +238,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 .jumbotron {
   background-color: transparent;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding-top: 1px;
   padding-bottom: 1px;
+  margin-bottom: -20px;
+  margin-top: -15px;
+  
 }
 
 .item .item-wrap img {
@@ -354,7 +365,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Custom Navbar */
 .custom-navbar {
-  padding-top: 30px;
+  padding-top: 15px;
   width: 100%;
 }
 
@@ -362,6 +373,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   .custom-navbar > .container {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  body {
+    overflow-y: hidden;
   }
 }
 
@@ -448,14 +463,24 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .social a {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
   border-radius: 50%;
-  background: #f8f9fa;
   position: relative;
   text-align: center;
   color: #0d1e2d;
 }
+
+
+.icofont-instagram {
+  color: rgb(225,48,108);
+}
+.icofont-facebook {
+  color: #3b5998;
+  
+}
+
 
 .social a span {
   display: inline-block;
@@ -467,4 +492,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .social a:hover {
   color: #000;
+}
+
+@media screen {
+  
 }
