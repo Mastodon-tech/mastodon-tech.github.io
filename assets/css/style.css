@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 1px;
+  padding-top: 5px;
   padding-bottom: 1px;
   margin-bottom: -20px;
   margin-top: -15px;
@@ -454,7 +454,12 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 0 0 4rem 0;
+  /*padding: 0 0 4rem 0;*/
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:80px;   /* Height of the footer */
+   background:transparent;
 }
 
 .footer a {
