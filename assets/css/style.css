@@ -241,9 +241,14 @@ h1, h2, h3, h4, h5, h6, p, .font-heading, #footerrow{
   width: 100%;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   
+}
+
+.jumbotron ::after, ::before {
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 
 .item .item-wrap img {
