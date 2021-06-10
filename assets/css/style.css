@@ -10,7 +10,7 @@ body {
     line-height: 1;
     margin:0px auto;
     padding:0px;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 @keyframes gradient {
@@ -24,9 +24,7 @@ body {
         background-position: 0% 50%;
     }
 }
-#footerrow {
-  padding-top: 1px;
-}
+
 
 .loader {
   height: 100%;
@@ -243,8 +241,8 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
   width: 100%;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin-bottom: -20px;
-  margin-top: -15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
   
 }
 
@@ -374,10 +372,6 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
     padding-right: 0;
     padding-left: 0;
   }
-
-  body {
-    overflow-y: hidden;
-  }
 }
 
 .custom-navbar .navbar-brand {
@@ -454,11 +448,11 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  /*padding: 0 0 4rem 0;*/
-  position:absolute;
-   bottom:0;
+  
+  position: relative;
+   bottom:0px;
    width:100%;
-   height:80px;   /* Height of the footer */
+   height:50px;  
    background:transparent;
 }
 
@@ -470,11 +464,12 @@ h1, h2, h3, h4, h5, h6, .font-heading, #footerrow{
   display: inline-block;
   width: 35px;
   height: 35px;
-  background: #ffffff;
+  background: #ffffff91;
   border-radius: 50%;
   position: relative;
   text-align: center;
   color: #0d1e2d;
+  padding: 5px;
 }
 
 
