@@ -4,7 +4,7 @@ body {
   
     font-family: "Noto Sans TC", sans-serif;
     color: #0d1e2d;
-    background: linear-gradient(-45deg, #c1e6b8, #2b593e, #6cc2d1, #0b093f);
+    background: linear-gradient(-45deg, #ffffff, #7bbd97, #469b4d, #4a8ce2);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     line-height: 1.3;
