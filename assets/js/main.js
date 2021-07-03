@@ -71,7 +71,10 @@
     }, 3000); //Here you can change preloader time
 
 
-
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+  });
 
 
 
