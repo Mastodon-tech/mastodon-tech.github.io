@@ -9,6 +9,7 @@ body {
     margin:0px auto;
     padding:0px;
     overflow-y: scroll;
+    height: 100vh;
 }
 
 @keyframes gradient {
