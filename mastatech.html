@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mastodon</title>
+  <title>Masta Tech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
 
- 
+  <link rel='stylesheet' id='home-css'  href='assets/css/customNav.css' media='all' />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,41 +28,110 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel='stylesheet' id='home-css'  href='assets/css/customNav.css' media='all' />
+  <link href="assets/css/timeline.css" rel="stylesheet">
 
-   
- 
-  <!--Readmore Ourjourney-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
-    #more {
-      display: none;
-    }
     body {
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
+  margin:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(207, 230, 196) 50%, rgba(76, 212, 71, 0.418) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+@media (max-width: 1920px){
+#firstxt{
+  padding: 70px 0;
+}
+}
+@media (max-width: 1440px){
+#firstxt{
+  padding: 70px 0;
+}
+}
+@media (max-width: 1366px){
+#firstxt{
+  padding: 70px 0;
+}
+}
+@media (max-width: 1200px){
+#firstxt{
+  padding: 70px 0;
+}
+}
+
+
   </style>
 
 </head>
 
 <body>
+<!--======= Pre Loader =======-->
+    <section class="preloader">
+        <div class="preloader__wrapper">
+          <div class="preloader__circle">
+            <div class="preloader__circle-line preloader__circle-line--1"></div>
+            <div class="preloader__circle-line preloader__circle-line--2"></div>
+            <div class="preloader__circle-line preloader__circle-line--3"></div>
+            <div class="preloader__circle-line preloader__circle-line--4"></div>
+            <div class="preloader__circle-line preloader__circle-line--5"></div>
+            <div class="preloader__circle-line preloader__circle-line--6"></div>
+            <div class="preloader__circle-line preloader__circle-line--7"></div>
+            <div class="preloader__circle-line preloader__circle-line--8"></div>
+            <div class="preloader__circle-line preloader__circle-line--9"></div>
+          </div>
+        </div>
+      </section>
   
-  <!--======= Pre Loader =======-->
-  <section class="preloader">
-    <div class="preloader__wrapper">
-      <div class="preloader__circle">
-        <div class="preloader__circle-line preloader__circle-line--1"></div>
-        <div class="preloader__circle-line preloader__circle-line--2"></div>
-        <div class="preloader__circle-line preloader__circle-line--3"></div>
-        <div class="preloader__circle-line preloader__circle-line--4"></div>
-        <div class="preloader__circle-line preloader__circle-line--5"></div>
-        <div class="preloader__circle-line preloader__circle-line--6"></div>
-        <div class="preloader__circle-line preloader__circle-line--7"></div>
-        <div class="preloader__circle-line preloader__circle-line--8"></div>
-        <div class="preloader__circle-line preloader__circle-line--9"></div>
-      </div>
-    </div>
-  </section>
+<!-- ======= Background ======= -->
+ <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div> 
+
+
 
 
   <!--Desktop Navbar-->
@@ -113,7 +182,6 @@
                       <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="sellcar.html">Sell a Car</a></li>
                       <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="mastatech.html">Masta Tech</a></li>
                       </ul></div>
-
                 </div>
 
                 <!--   menu item box-->
@@ -129,9 +197,9 @@
                 <!--   menu item box-->
                 <div class="MenuItems__items">
                     <h4>Blog</h4>
-                    <div class="menu-partners-container"><ul id="partner-menu" class="menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"><a href="diy.html">DIY</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="detailstudio.html">Detail Studio</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="detailhack.html">Detail Hack</a></li>
+                    <div class="menu-partners-container"><ul id="partner-menu" class="menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"><a href="#">DIY</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="#">Detail Studio</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="#">Detail Hack</a></li>
                     
                   </ul>
                   </div>                
@@ -141,10 +209,10 @@
                 <!--   menu item box-->
                 <div class="MenuItems__items">
                     <h4>Media</h4>
-                    <div class="menu-media-container"><ul id="media-menu" class="menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="newsroom.html">Newsroom</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="gallery.html">Gallery</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="studio.html">Studio</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="resources.html">Resources</a></li>
+                    <div class="menu-media-container"><ul id="media-menu" class="menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="#">Newsroom</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="#">Gallery</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="#">Studio</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="#">Resources</a></li>
                 </ul>
               </div>                
             </div>
@@ -152,8 +220,8 @@
                 <!--   menu item box-->
                 <div class="MenuItems__items">
                     <h4>career</h4>
-                    <div class="menu-career-container"><ul id="career-menu" class="menu"><li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="jobopening.html">Job Openning</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499"><a href="lifeatmastodon.html">Life @ Mastodon</a></li>
+                    <div class="menu-career-container"><ul id="career-menu" class="menu"><li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="#">Job Openning</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499"><a href="#">Life @ Mastodon</a></li>
                     </ul>
                   </div>                
                 </div>
@@ -161,9 +229,9 @@
                 <!--   menu item box-->
                 <div class="MenuItems__items">
                     <h4>contact</h4>
-                    <div class="menu-contact-container"><ul id="contact-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="info.html">Information</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="enquiries.html">Enquiries</a></li>
-                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a href="faq.html">FAQ</a></li>
+                    <div class="menu-contact-container"><ul id="contact-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="contact.html">Information</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="#">Enquiries</a></li>
+                    <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a href="#">FAQ</a></li>
                     </ul>
                   </div>                
                 </div>
@@ -180,23 +248,24 @@
     <div class="Startup_Banner__slider__notes">
         <div class="container-fluid" style="width: 100%; padding-right: 200px; padding-left: 100px; margin-right: auto; margin-left: auto;">
             <div class="row">
+              
                 <div class="col-md-12 Startup_Banner__slider__notes-wrap">
-                  
                     <div class="Startup_Banner__slider__notes__icon">
-                      <h4 class="font-weight-lighter" style="font-size: 14px; color: rgba(240, 255, 255, 0.829);">Portfolio Startup of</h4>                        <ul>
-                            <li><a target="_blank" href="#">
-                                    <img src="assets/img/navimg/home/sub_logo1.png"
-                                         alt="image missing"></a></li>
-                            <li><a target="_blank" href="#">
-                                    <img src="assets/img/navimg/home/sub_logo2.png"
-                                         alt="image missing"></a></li>
-                            <li><a target="_blank" href="#">
-                              <img src="assets/img/navimg/home/sub-logo1.svg"
-                                   alt="image missing"></a></li>
-                            <li><a target="_blank" href="#">
-                                    <img src="assets/img/navimg/home/sub-logo2.svg"
-                                        alt="image missing"></a></li>
-                        </ul>
+                    <h4 class="font-weight-lighter" style="font-size: 14px; color: rgba(240, 255, 255, 0.829);">Portfolio Startup of</h4>  
+                    <ul style="margin: 0ex;">
+                        <li><a target="_blank" href="#">
+                                <img src="assets/img/navimg/home/sub_logo1.png"
+                                     alt="image missing"></a></li>
+                        <li><a target="_blank" href="#">
+                                <img src="assets/img/navimg/home/sub_logo2.png"
+                                     alt="image missing"></a></li>
+                        <li><a target="_blank" href="#" style="height: auto; width:113px">
+                          <img src="assets/img/navimg/home/sub-logo1.svg"
+                               alt="image missing"></a></li>
+                        <li><a target="_blank" href="#" style="height: auto; width:134px">
+                                <img src="assets/img/navimg/home/sub-logo2.svg"
+                                    alt="image missing"></a></li>
+                    </ul>
                     </div>
 
                     <div class="Startup_Banner__slider__notes__social">
@@ -301,9 +370,9 @@
                           <a class="main-sub-clicked" href="javascript:">Blog</a>
                           <!--  sub menu 2nd step   -->
                           <ul class="mobile-inner-sub">
-                              <div class="menu-partners-container"><ul id="partners-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"><a href="diy.html">DIY</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="detailstudio.html">Detail Studio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="detailhack.html">Detail Hack</a></li>
+                              <div class="menu-partners-container"><ul id="partners-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"><a href="#">DIY</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="#">Detail Studio</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="#">Detail Hack</a></li>
 </ul></div>                            </ul>
                       </li>
 
@@ -313,10 +382,10 @@
                           <!--  sub menu 2nd step   -->
                           <ul class="mobile-inner-sub">
                               
-                              <div class="menu-media-container"><ul id="media-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="newsroom.html">Newsroom</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="gallery.html">Gallery</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="studio.html">Studio</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513"><a href="resources.html">Resources</a></li>
+                              <div class="menu-media-container"><ul id="media-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="#">Newsroom</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="#">Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="#">Studio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1513"><a href="#">Resources</a></li>
 
 </ul></div>                            </ul>
                       </li>
@@ -327,8 +396,8 @@
                           <!--  sub menu 2nd step   -->
                           <ul class="mobile-inner-sub">
                               
-                              <div class="menu-career-container"><ul id="career-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="jobopening.html">Job Openning</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499"><a href="lifeatmastodon.html">Life @ Mastodon</a></li>
+                              <div class="menu-career-container"><ul id="career-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="#">Job Openning</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1499"><a href="career/career-job/index.html">Life @ Mastodon</a></li>
 </ul></div>                            </ul>
                       </li>
 
@@ -338,9 +407,9 @@
                           <!--  sub menu 2nd step   -->
                           <ul class="mobile-inner-sub">
                               
-                              <div class="menu-contact-container"><ul id="contact-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="info.html">Information</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="enquiries.html">Enquiries</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a href="faq.html">FAQ</a></li>
+                              <div class="menu-contact-container"><ul id="contact-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="contact.html">Information</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="#">Enquiries</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a href="#">FAQ</a></li>
 </ul></div>                            </ul>
                       </li>
 
@@ -362,7 +431,7 @@
                   <img src="assets/img/navimg/home/sub_logo2.png"
                        alt="image missing"></a></li>
       </ul>
-      <br>
+      <br style="padding: 0;">
       <ul>
           <li><a target="_blank" href="#" style="height: auto; width:112px">
             <img src="assets/img/navimg/home/sub-logo1.svg"
@@ -379,115 +448,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <main id="main">
-
-  <!--=====ABOUT=====-->  
-  <div class="jumbotron text-center" style="padding-top: 110px; text-align: justify;">
+  <!--===========contact us form===========-->
     
-        <h5 class="font-weight-normal">Mastodon is a vehicle maintenance platform providing Car Wash & Detailing, Scanning & Repair services with its dedicated marketplace for cars and car parts & accessories.</h5>
-      </div>
-    </div>
+    <main id="main" style="margin-top: 110px;">
 
-
-    <!-- ======= Works Section ======= -->
-
-    <div class="jumbotron">
-    
-    <section class="section site-portfolio">
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
-            <a href="https://www.mastodonwash.co/" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Mastodon Wash</h3>
-                <br>
-                <span>
-                  <p style="font-size: 14px; color: azure;">	
-                    &#2096; Car Wash <br>
-                    &#2096; Car polish <br>
-                    &#2096; Paint Correction <br>
-                    &#2096; Coating</p>
-              </span>
-              </div>
-              <img class="img-fluid" src="assets/img/service-bright-1-min.jpg">
-            </a>
-          </div>
-
-          <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
-            <a href="mastodongarage.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Mastodon Garage</h3>
-                <br>
-                <span>
-                  <p style="font-size: 14px; color: azure;">	
-                    &#2096; Maintain your car <br>
-                    &#2096; OBD Scanning <br>
-                    &#2096; Repair & Replace <br>
-                    &#2096; Hybrid & Fuel</p>
-                </span>
-              </div>
-              <img class="img-fluid" src="assets/img/service-bright-3-min.jpg">
-            </a>
-          </div>          
-
-          <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
-            <a href="mastamart.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Masta Mart</h3>
-                <br>
-                <span>
-                  <p style="font-size: 14px; color: azure;">	
-                    &#2096; Dedicated Marketplace<br>
-                    &#2096; Global Collection <br>
-                    &#2096; Trending Collection <br>
-                    &#2096; Buy & Sell Car</p>
-                </span>
-              </div>
-              <img class="img-fluid" src="assets/img/service-bright-2-min.jpg">
-            </a>
-          </div>
-
-
-
-
-
-
-          <div class="item col col-6 col-sm-3 col-md-3 col-lg-3 mb-3">
-            <a href="mastatech.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Masta Tech</h3> 
-                <br>
-                <span><p style="font-size: 14px; color: azure; ">	
-                  &#2096; Coming Soon</p></span>
-              </div>
-              <img class="img-fluid" src="assets/img/service-bright-5-min.jpg">
-            </a>
-          </div>
-          
-         
-        </div>
+        
+            <div class="container text-center" style="justify-content: center; vertical-align: middle; margin-top: 200px;">
       
+                <h3>Coming Soon</h3>
+      
+            </div>
+      
+        
+      
+        </main>
 
-    </section><!-- End  Works Section -->
-  </div> 
+  
 
 
 
 
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   
